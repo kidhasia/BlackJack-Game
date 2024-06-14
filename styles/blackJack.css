@@ -1,0 +1,90 @@
+/* Reset default margin, padding, and border for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* Set a default font family and background color for the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5; /* Light grey background for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center and align items within the container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+/* Style for the heading */
+.head h1 {
+    font-size: 3em;
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 10px;
+}
+
+/* Style for the paragraph */
+.para1 p {
+    font-size: 1.5em;
+    color: #666; /* Medium grey color for the paragraph */
+    margin-bottom: 20px;
+}
+
+/* Style individual card elements */
+.cards {
+    background-color: #ffffff; /* White background for cards */
+    padding: 30px; /* Adequate padding inside cards */
+    border-radius: 15px; /* Rounded corners for a modern look */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    margin-bottom: 20px; /* Space below the cards section */
+}
+
+/* Add a hover effect to cards */
+.cards:hover {
+    transform: translateY(-10px); /* Slightly lift the card */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Style for the .sum class */
+.sum {
+    margin-top: 20px; /* Space above the .sum element */
+    font-size: 1.2em; /* Slightly larger text */
+    color: #555555; /* Dark grey color for better readability */
+}
+
+/* Add some spacing around each card */
+.cards + .cards {
+    margin-left: 20px; /* Space between cards if there are multiple */
+}
+.btn {
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Style for the button */
+.btn button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding for the button */
+    font-size: 1em; /* Button text size */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Add a hover effect to the button */
+.btn button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
